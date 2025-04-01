@@ -11,6 +11,7 @@ go本地依赖包放在~/go/pkg
 - go test -v -cover    测试并生成覆盖率报告
 - go test -v -coverprofile=cover.out  测试并生成覆盖率报告到cover.out文件
 - go tool cover -html=cover.out    查看覆盖率报告
+- go tool cover -html=coverage.out -o coverage.html    查看覆盖率报告并生成html文件
 - go test -v -coverprofile=cover.out && go tool cover -html=cover.out 测试并生成覆盖率报告并查看报告
 - go test -v -coverprofile=cover.out -covermode=count && go tool cover -html=cover.out    测试并生成覆盖率报告并查看报告，使用count模式
 - go test -v -coverprofile=cover.out -covermode=set && go tool cover -html=cover.out   测试并生成覆盖率报告并查看报告，使用set模式
